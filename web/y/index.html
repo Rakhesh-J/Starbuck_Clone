@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>starbucks</title>
+    <link rel="stylesheet" href="project1.css">
+    <link rel="icon" type="image/x-icon" href="images/Starbucks-logo-2000px-png.png">
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.6.7/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.6.7/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.6.7/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.6.7/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.6.7/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.6.7/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.6.7/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.6.7/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.6.7/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.6.7/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+      
+    <body>
+        <header class="head">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                     <img src="images/starbucks.png" alt="">
+                    </a>
+                </div>
+                <div class="left">
+                    <ul class="left_menu">
+                        <li><a href="">MENU</a></li>
+                        <li><a href="">REWARDS</a></li>
+                        <li><a href="">GIFT CARDS</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul class="right_menu">
+                        <li>
+                            <a href="#">
+                              <img src="images/marker.svg" alt="">
+                              <span>Find a store</span>
+                            </a>
+                          </li>
+                          <li><button class="btn btn-dark-outline">Sign in</button></li>
+                          <li><button class="btn btn-dark">Join now</button></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    
+        <div class="content">
+    
+        <section class="box box-a bg-primary text-center py-md grid-col-2 ">
+            <div class="box-text">
+              <h2 class="text-xl">Choose your mood</h2>
+              <p class="text-md">
+                Go for the comforting flavors of a Pistachio Latte or the lively layers of an Iced Brown Sugar Oatmilk Shaken Espresso.
+              </p>
+              <button class="btn btn-light-outline btn-grn">Explore the winter menu</button>
+            </div>
+            <img src="images/coffee.jpg" style="height: auto;width: 100%;" alt="having some technical issue.." />
+          </section>
+    
+          
+          <section class="box box-b bg-third text-center py-md grid-col-2 ">
+            <img src="images/uber.webp" style="height: auto;width: 100%;" alt="having some technical issue.." />
+            <div class="box-text ">
+              <h2 class="text-xl text-dark">Coffee delivered. Day made.</h2>
+              <p class="text-md  text-dark">
+                Your go-to order can come to you!*
+              </p>
+              <button class="btn btn-dark-outline btn-light">order now</button>
+            </div>
+            </section>
+    
+          <section class="box box-c bg-third bg-primary text-center py-md grid-col-2 ">
+              <div class="box-text">
+                <h1 class="text-md text-dark">Earning 4,500 Bonus Stars is Super Starifying</h1>
+                <p class="text-sm text-dark">
+                  Earn more Stars and even more Rewards with a <b>$0 intro annual fee for your first year</b> with the Starbucks<sup>®</sup> Rewards Visa<sup>®</sup> Card.
+                   Plus your Stars won’t expire – an exclusive Starbucks benefit for cardmembers. Now that’s Super Starifying.
+                </p>
+                <button class="btn btn-dark-outline btn-light">Learn more</button>
+              </div>
+              <img src="images/card.webp" style="height: auto;width: 100%;" alt="having some technical issue.." />
+           </section>
+    
+          <section class="box box-d bg-third bg-primary text-center py-md grid-col-2 ">
+            <img src="images/man.jpg" style="height: auto;width: 100%;" alt="having some technical issue.." />
+            <div class="box-text ">
+              <h2 class="text-md text-dark">Celebrating Black History Month</h2>
+              <p class="text-sm text-dark">
+                Join us as we recognize the everyday Black excellence of our partners (employees).
+                 Explore ways to help cultivate the next generation of excellence.
+              </p>
+              <button class="btn btn-dark-outline btn-light">Learn more</button>
+            </div>
+            </section>
+    
+      <div class="contents">
+       <div class="discription ">
+         <p>*Menu limited. Restricted delivery area. Available in participating locations only. Fees subject to change. Prices for Starbucks®
+            items purchased through Uber Eats may be higher than posted in stores or as marked. See the Uber Eats app for details.</p>
+       </div>
+       </div>
+      </div>
+    
+      <div class="table-div">
+        <table class="table-1">
+          <tr>
+              <th>About Us</th>
+              <th>Careers</th>
+              <th>Social Impact</th>
+              <th>For Business Partners</th>
+              <th>Order and Pickup</th>
+          </tr>
+          <tr>
+              <td class="t-cont"><a href="https://www.starbucks.com/about-us/">Our Company</a></td>
+              <td class="t-cont"><a href="https://www.starbucks.com/careers/working-at-starbucks/culture-and-values/">Culture and Values</a></td>
+              <td class="t-cont"><a href="https://www.starbucks.com/responsibility/people/">People</a></td>
+              <td class="t-cont"><a href="https://www.starbucks.com/business/landlord-faq/">Landlord Support Center</a></td>
+              <td class="t-cont"><a href="https://www.starbucks.com/rewards/mobile-apps/">Order on the app</a></td>
+          </tr>
+          <tr>
+            <td class="t-cont"><a href="https://www.starbucks.com/coffee/">Our Coffee</a></td>
+            <td class="t-cont"><a href="https://stories.starbucks.com/stories/equity-inclusion/">Inclusion, Diversity, and Equity</a></td>
+            <td class="t-cont"><a href="https://www.starbucks.com/responsibility/planet/">Planet</a></td>
+            <td class="t-cont"><a href="https://www.starbucks.com/business/suppliers/">Suppliers</a></td>
+            <td class="t-cont"><a href="https://www.starbucks.com/menu">Order on the Web</a></td>
+        </tr>
+        <tr>
+          <td class="t-cont"><a href="https://stories.starbucks.com/">Stories and News</a></td>
+          <td class="t-cont"><a href="https://www.starbucks.com/careers/working-at-starbucks/education/">College Achievement Plan</a></td>
+          <td class="t-cont"><a href="https://www.starbucks.com/responsibility/reporting-hub/">Environmental and Social Impact Reporting</a></td>
+          <td class="t-cont"><a href="https://www.starbuckscardb2b.com/">Corporate Gift Card Sales</a></td>
+          <td class="t-cont"><a href="https://delivery.starbucks.com/">Delivery</a></td>
+      </tr>
+      <tr>
+        <td class="t-cont"><a href="https://archive.starbucks.com/">Starbuck Achieve</a></td>
+        <td class="t-cont"><a href="https://alumni.starbucks.com/login/">Alumni Community</a></td>
+        <td></td>
+        <td class="t-cont"><a href="https://www.nestlecoffeepartnerssl.com/our-brands/we-proudly-serve-starbucks-coffee-program">Office and Foodservice Coffee</a></td>
+        <td class="t-cont"><a href="https://www.starbucks.com/ways-to-order/">Order and Pickup Option</a></td>
+    </tr>
+    <tr>
+      <td class="t-cont"><a href="https://investor.starbucks.com/ir-home/default.aspx">Investor Relation</a></td>
+      <td class="t-cont"><a href="https://www.starbucks.com/careers/">U.S. Careers</a></td>
+      <td></td>
+      <td></td>
+      <td class="t-cont"><a href="https://athome.starbucks.com/?utm_source=starbucks.com&utm_medium=referral&utm_campaign=footer">Explore and Find Coffee for Home</a></td>
+    </tr>
+    <tr>
+      <td class="t-cont"><a href="https://customerservice.starbucks.com/">Customer Service</a></td>
+      <td class="t-cont"><a href="https://www.starbucks.com/careers/international-careers/">International Careers</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+     
+      </table>
+      </div>
+    <footer>
+      <div class="footer">
+        <div class="logos">
+          <ul class="foot-logo">
+          <a href="https://open.spotify.com/user/starbucks">
+            <img src="images/spotify.png" alt="">
+          </a>
+          <a href="https://www.facebook.com/Starbucks/">
+            <img src="images/facebook.png" alt="">
+          </a><a href="https://www.pinterest.com/starbucks/">
+            <img src="images/pintrest.png" alt="">
+          </a><a href="https://www.instagram.com/starbucks/">
+            <img src="images/instagram.png" alt="">
+          </a><a href="https://www.youtube.com/starbucks">
+            <img src="images/youtube.png" alt="">
+          </a>
+          <a href="https://twitter.com/starbucks/">
+            <img src="images/twitter.png" alt="">
+          </a>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-links">
+        <ul class="links">
+          <li><a href=""> Privacy Policy</a></li><li>|</li>
+          <li><a href="">Terms of Use</a></li><li>|</li>
+          <li><a href="">CA Supply Chain Act</a></li><li>|</li>
+          <li><a href="">Cookie Preference</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+          © 2022 Starbucks Coffee Company. All rights reserved.
+        </div>
+    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>
